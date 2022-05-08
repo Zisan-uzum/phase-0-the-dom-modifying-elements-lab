@@ -1,5 +1,6 @@
 // Write your code here!
 document.getElementById("main").remove();
-document.createElement("h1");
-document.getElementsByTagName("h1")[0].id = "victory";
-document.getElementById("victory").textContent = "ZISAN is the champion";
+const newHeader = document.createElement("h1");
+newHeader.setAttribute("id", "victory");
+newHeader.textContent = "ZISAN is the champion";
+document.body.appendChild(newHeader);
